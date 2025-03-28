@@ -55,6 +55,10 @@ Planlanan analiz başlıkları:
 
 ## 📊 Örnek Görselleştirmeler
 
+### 🔸 Personel Sayısı Tablosu
+
+![Personel Sayısı](./personel_sayisi.png)
+
 ### 🔸 Personel Dağılımı
 
 ![Personel Dağılımı](./personel_dagilimi.png)
@@ -63,6 +67,4 @@ Planlanan analiz başlıkları:
 
 ![Aylık Ortalama Oda Sayısı](./aylik_ortalama_temizlenen_oda_sayisi.png)
 
-### 🔸 Personel Sayısı Tablosu
 
-![Personel Sayısı](./personel_sayisi.png)
