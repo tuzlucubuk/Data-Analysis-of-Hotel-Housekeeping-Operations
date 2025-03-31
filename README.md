@@ -32,11 +32,10 @@ Planlanan analiz başlıkları:
 
 | Dosya | Açıklama |
 |-------|----------|
-| `otel_veri_seti_(rev.06).ipynb` | Veri setini oluşturan Python Jupyter defteri |
-| `otel_temizlik_veriseti_YYYY-MM-DD.csv` | Simülasyonun ürettiği veri seti (CSV) |
-| `otel_temizlik_veriseti_YYYY-MM-DD.xlsx` | Aynı veri setinin Excel versiyonu |
-| `otel_veri_analizi_(rev.02).ipynb` | Keşifsel veri analizine başlanan defter |
-| `README.md` | Proje açıklamaları ve kullanım yönergeleri (bu dosya) |
+| `otel_veri_seti_(rev.06).ipynb` | Veri setini oluşturan Python Jupyter kodu |
+| `otel_temizlik_veriseti_YYYY-MM-DD.csv` | Simülasyonun ürettiği veri seti (.csv) |
+| `otel_temizlik_veriseti_YYYY-MM-DD.xlsx` | Simülasyonun ürettiği veri seti (.xlsx) |
+| `otel_veri_analizi_(rev.02).ipynb` | Keşifsel veri analizine başlanan Python kodu |
 
 ## Kullanılan Teknolojiler
 
