@@ -1,15 +1,15 @@
 # 🧹 Otel Temizlik Operasyonları – Simülasyon ve Verimlilik Analizi Projesi
 
-## 🌟 Genel Bakış
+## Genel Bakış
 
 Bu proje, büyük ölçekli bir otelin **günlük temizlik operasyonlarını simüle ederek** gerçekçi bir veri seti oluşturmayı ve bu veri üzerinden **çalışan verimliliğini analiz etmeyi** hedeflemektedir.  
 Python ile geliştirilen simülasyon, otel operasyonlarının günlük döngüsünü detaylı biçimde taklit ederken; analiz bölümü, **çalışan performansı, hız ve iş yükü** gibi metriklerle **veriye dayalı karar desteği** sağlamaktadır.
 
 ---
 
-## 🏗️ Proje Aşamaları
+## Proje Aşamaları
 
-### 1. Veri Seti Üretimi ✅
+### 1. Veri Seti Üretimi 
 - 2024 yılı boyunca 365 gün simülasyon
 - 18 katlı otel – farklı oda tipleri (Standart, Suit, Lüx Suit)
 - Temizlik türleri (Rutin, Detaylı, Mini Bar, Arıza, vb.)
@@ -17,20 +17,20 @@ Python ile geliştirilen simülasyon, otel operasyonlarının günlük döngüs�
 - Giriş/çıkış saatleri ve temizlik süre simülasyonu
 - `.csv` ve `.xlsx` formatlarında dışa aktarım
 
-### 2. Keşifsel Veri Analizi ✅
+### 2. Keşifsel Veri Analizi 
 - Oda tipi ve temizlik türüne göre süre analizleri  
 - Personel iş yükü ve günlük çalışma takibi  
 - Mevsimsel yoğunluk dağılımları  
 - Aykırı değer tespiti ve süre kalibrasyonu
 
-### 3. Verimlilik ve Performans Değerlendirme ✅
+### 3. Verimlilik ve Performans Değerlendirme 
 - Temizlik süre karşılaştırmalı **hız skoru**  
 - Toplam iş yüküne göre **yoğunluk skoru**  
 - Bu iki skorun ağırlıklı ortalamasıyla **genel verimlilik skoru**  
 - Gerçek süreler üzerinden **otomatik norm belirleme** (data-driven kalibrasyon)  
 - Aykırı personellerin dışlanması için **trimmed mean uygulaması**
 
-### 4. Streamlit Arayüzü ✅
+### 4. Streamlit Arayüzü 
 - Web tabanlı kullanıcı arayüzü
 - Veri dosyası yükleme adımı
 - Personel ID ve tarih aralığına göre filtreleme
@@ -39,7 +39,7 @@ Python ile geliştirilen simülasyon, otel operasyonlarının günlük döngüs�
 
 ---
 
-## 🧠 Veri Seti Üretim Yaklaşımı (Simülasyon Mantığı)
+## Veri Seti Üretim Yaklaşımı (Simülasyon Mantığı)
 
 Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simülasyon mantığı ile oluşturulmuştur. Aşağıdaki özellikler dikkate alınmıştır:
 
@@ -54,9 +54,9 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 
 ---
 
-## 🔍 Veri Analiz Süreci
+## Veri Analiz Süreci
 
-### 📊 1. Keşifsel Veri Analizi (EDA)
+### 1. Keşifsel Veri Analizi (EDA)
 - Temizlik türüne ve oda tipine göre süre dağılımları
 - Personel bazlı iş yükü ve ortalama görev süresi
 - Zaman serisi ile mevsimsel analiz:
@@ -67,7 +67,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
   
   ![](./ortalama_temizlik_sureleri.png)
 
-### 🧮 2. Verimlilik Skoru Hesaplamaları
+### 2. Verimlilik Skoru Hesaplamaları
 
 - **Beklenen Süre**: Her temizlik türü ve oda tipi için veri setinden çıkarılır
 - **Hız Skoru** = `(beklenen_süre / gerçek_süre) * 100`
@@ -75,7 +75,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 - **Verimlilik Skoru** = `(hız * 0.3 + yoğunluk * 0.7)`
 - **Trimmed mean**: Alt %35 ve üst %5 personel dışlanarak hesaplanır
 
-### 🧠 3. Kümeleme Analizi
+### 3. Kümeleme Analizi (KMeans, DBSCAN)
 
 - Çalışanlar, görev sayısı ve ortalama süreye göre gruplandırılır.
   
@@ -83,7 +83,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 
 ---
 
-## 📁 Dosya Açıklamaları
+## Dosya Açıklamaları
 
 | Dosya | Açıklama |
 |-------|----------|
@@ -95,11 +95,22 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 
 ---
 
-## 🚀 Uygulama Nasıl Başlatılır?
+## Uygulama Nasıl Başlatılır?
 
 ### 1. Gerekli Kütüphaneleri Yükleyin:
-
 ```bash
 pip install streamlit pandas openpyxl
+```
+
+### 2. Streamlit Uygulamasını Başlatın:
+```bash
+streamlit run personel_analiz_app.py
+```
+
+### 3. Tarayıcıda Açılan Arayüz:
+Uygulama otomatik olarak tarayıcıda açılır. Açılmazsa tarayıcıya şunu yazın:
+```bash
+[streamlit run personel_analiz_app.py](http://localhost:8501)
+```
 
 
