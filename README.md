@@ -67,11 +67,13 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
   
   ![](./ortalama_temizlik_sureleri.png)
 
+
 ### 2. Kümeleme Analizi (KMeans, DBSCAN)
 
 - Çalışanlar, görev sayısı ve ortalama süreye göre gruplandırılır.
   
   ![](./clustering_gaussiandan_sonra.png)
+
   
 ### 3. Verimlilik Skoru Hesaplamaları
 
