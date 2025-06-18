@@ -61,7 +61,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 - Personel bazlı iş yükü ve ortalama görev süresi
 - Zaman serisi ile mevsimsel analiz:
   
-  ![](./aylik_ortalama_temizlenen_oda_sayilari.png)
+  ![](./aylik_ortalama_temizlenen_oda_sayisi.png)
 
 - Ortalama temizlik süreleri:
   
@@ -87,9 +87,9 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 
 | Dosya | Açıklama |
 |-------|----------|
-| `otel_veri_seti_rev.09.py` | Simülasyon kodu – veri üretimi |
+| `otel_veri_seti.py` | Simülasyon kodu – veri üretimi |
 | `otel_temizlik_veriseti_YYYY-MM-DD.csv` | Oluşturulan veri seti |
-| `otel_veri_analizi_rev.03.ipynb` | Keşifsel analiz defteri |
+| `otel_veri_analizi.ipynb` | Keşifsel analiz defteri |
 | `personel_analiz_app.py` | Streamlit ile analiz arayüzü |
 | `README.md` | Bu dokümantasyon dosyası |
 
