@@ -114,7 +114,7 @@ streamlit run personel_analiz_app.py
 ### 3. Tarayıcıda Açılan Arayüz:
 Uygulama otomatik olarak tarayıcıda açılır. Açılmazsa tarayıcıya şunu yazın:
 ```bash
-[streamlit run personel_analiz_app.py](http://localhost:8501)
+http://localhost:8501
 ```
 
 
