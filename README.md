@@ -45,7 +45,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 
 - **Kat ve oda yapısı**: 18 katlı otel, farklı büyüklükte ve tipte odalarla modellenmiştir.
 - **Temizlik türleri**: Rutin, detaylı, minibar kontrolü ve teknik arıza gibi operasyonel türler dahil edilmiştir.
-- **Personel atamaları**: Aynı anda birden fazla temizlik yapılmaması için zaman çakışmaları önlenmiştir.
+- **Personel atamaları**: Aynı personelin aynı zamanda birden fazla temizlik yapmaması için zaman çakışmaları önlenmiştir.
 - **Süre simülasyonu**: Temizlik süreleri, her temizlik türü ve oda tipi kombinasyonu için belirlenmiş normal dağılımlardan rastgele çekilmiştir.
 
 | Dağıtımsız Süre Üretimi | Normal Dağılım Kullanılmış Hali |
@@ -81,6 +81,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 - **Hız Skoru** = `(beklenen_süre / gerçek_süre) * 100`
 - **Yoğunluk Skoru** = `(personelin görev sayısı / trimmed mean) * 100`
 - **Verimlilik Skoru** = `(hız * 0.3 + yoğunluk * 0.7)`
+- **Beklenen Süreler**: Oda tipi ve Temizlik türü baz alınarak hesaplanır
 - **Trimmed mean**: Alt %35 ve üst %5 personel dışlanarak hesaplanır
 
 ![](./streamlit_ornegi.png)
