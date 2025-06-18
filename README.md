@@ -67,7 +67,13 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
   
   ![](./ortalama_temizlik_sureleri.png)
 
-### 2. Verimlilik Skoru Hesaplamaları
+### 2. Kümeleme Analizi (KMeans, DBSCAN)
+
+- Çalışanlar, görev sayısı ve ortalama süreye göre gruplandırılır.
+  
+  ![](./clustering_gaussiandan_sonra.png)
+  
+### 3. Verimlilik Skoru Hesaplamaları
 
 - **Beklenen Süre**: Her temizlik türü ve oda tipi için veri setinden çıkarılır
 - **Hız Skoru** = `(beklenen_süre / gerçek_süre) * 100`
@@ -75,11 +81,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 - **Verimlilik Skoru** = `(hız * 0.3 + yoğunluk * 0.7)`
 - **Trimmed mean**: Alt %35 ve üst %5 personel dışlanarak hesaplanır
 
-### 3. Kümeleme Analizi (KMeans, DBSCAN)
-
-- Çalışanlar, görev sayısı ve ortalama süreye göre gruplandırılır.
-  
-  ![](./clustering_gaussiandan_sonra.png)
+![](./streamlit_ornegi.png)
 
 ---
 
