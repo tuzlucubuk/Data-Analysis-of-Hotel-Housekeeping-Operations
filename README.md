@@ -61,7 +61,7 @@ Veri seti, gerçek dünyadaki temizlik operasyonlarını taklit eden bir simüla
 - Personel bazlı iş yükü ve ortalama görev süresi
 - Zaman serisi ile mevsimsel analiz:
   
-  ![](./gunluk_temizlenen_oda_sayilari.png)
+  ![](./aylik_ortalama_temizlenen_oda_sayilari.png)
 
 - Ortalama temizlik süreleri:
   
